@@ -1,0 +1,20 @@
+{
+  "id": "malbec",
+  "title": "Malbec",
+  "price": 179.90,
+  "description": "Com fragrâncias marcantes como um bom vinho, as fragrâncias Malbec são as primeiras do mundo a serem feitas com álcool vínico. Um verdadeiro presente para o homem que sabe apreciar o que há de bom na vida.",
+  "stock": 4,
+  "img": "./api/produtos/malbec/malbec-foto.png",
+  "assessments": [
+    {
+      "title": "Rogério",
+      "stars": 5,
+      "description": "Gostei muito do produto, atendeu todas as minhas necessidades."
+    },
+    {
+      "title": "Nathália",
+      "stars": 4,
+      "description": "Gostei, mas o preço poderia ser melhor."
+    }
+  ]
+}

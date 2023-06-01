@@ -1,0 +1,20 @@
+{
+  "id": "creme_tododia",
+  "title": "Natura Homem",
+  "price": 164.90,
+  "description": "Homem de Natura é um perfume Aromático Fougére Masculino. Homem foi lançada em 1997. O perfumista que assina esta fragrância é Francisco Marano. As notas de topo são: Gengibre, Bergamota e Noz-moscada. As notas de coração são: Maçã, Pera e Pêssego. As notas de fundo são: Cedro, Almíscar e Sândalo",
+  "stock": 4,
+  "img": "./api/produtos/homem/homem-foto.png",
+  "assessments": [
+    {
+      "title": "Rogério",
+      "stars": 5,
+      "description": "Gostei muito do produto, atendeu todas as minhas necessidades."
+    },
+    {
+      "title": "Nathália",
+      "stars": 4,
+      "description": "Gostei, mas o preço poderia ser melhor."
+    }
+  ]
+}

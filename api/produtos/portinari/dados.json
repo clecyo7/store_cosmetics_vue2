@@ -1,0 +1,20 @@
+{
+  "id": "homem",
+  "title": "Natura Homem",
+  "price": 154.90,
+  "description": "Perfume Natura Homem Classico. Produto 100% Original",
+  "stock": 5,
+  "img": "./api/produtos/homem/homem-foto.png",
+  "assessments": [
+    {
+      "title": "Rogério",
+      "stars": 5,
+      "description": "Gostei muito do produto, atendeu todas as minhas necessidades."
+    },
+    {
+      "title": "Nathália",
+      "stars": 4,
+      "description": "Gostei, mas o preço poderia ser melhor."
+    }
+  ]
+}

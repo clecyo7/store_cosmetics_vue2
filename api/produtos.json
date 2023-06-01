@@ -1,0 +1,46 @@
+[
+  {
+    "id": "malbec",
+    "title": "Malbec",
+    "price": 179.90,
+    "img": "./api/produtos/malbec/malbec.png"
+  },
+  {
+    "id": "tododia",
+    "title": "Sabonete Tododia",
+    "price": 89.90,
+    "img": "./api/produtos/tododia/tododia.png"
+  },
+  {
+    "id": "quasar",
+    "title": "Quasar Classic",
+    "price": 159.90,
+    "img": "./api/produtos/quasar/quasar.png"
+  },
+  {
+    "id": "creme_tododia",
+    "title": "Hidratante Todo Dia",
+    "price": 42.90,
+    "img": "./api/produtos/creme_tododia/creme_tododia.png"
+  },
+  {
+    "id": "portinari",
+    "title": "Portinari",
+    "price": 154.90,
+    "img": "./api/produtos/portinari/portinari.png"
+  },
+  {
+    "id": "homem",
+    "title": "Natura Homem",
+    "price": 164.90,
+    "img": "./api/produtos/homem/homem.png"
+  },
+  {
+    "id": "uomini",
+    "title": "Uomini Black",
+    "price": 159.90,
+    "img": "./api/produtos/uomini/uomini.png"
+  }
+]
+
+

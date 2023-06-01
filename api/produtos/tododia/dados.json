@@ -1,0 +1,20 @@
+{
+  "id": "tododia",
+  "title": "Sabonetes Tododia",
+  "price": 179.90,
+  "description": "Sinta seu corpo em um banho revigorante com o Sabonete em Barra Tododia. Uma combinação de ingredientes naturais em uma fórmula gentil que limpa delicadamente mantendo a hidratação natural da pele.",
+  "stock": 4,
+  "img": "./api/produtos/tododia/tododia-foto.png",
+  "assessments": [
+    {
+      "title": "Rogério",
+      "stars": 5,
+      "description": "Gostei muito do produto, atendeu todas as minhas necessidades."
+    },
+    {
+      "title": "Nathália",
+      "stars": 4,
+      "description": "Gostei, mas o preço poderia ser melhor."
+    }
+  ]
+}

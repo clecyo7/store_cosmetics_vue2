@@ -1,0 +1,20 @@
+{
+  "id": "creme_tododia",
+  "title": "Hidratante Cereja E Avelã Natura-Todo Dia",
+  "price": 42.90,
+  "description": "A sua fragrância favorita voltou: atraente e marcante que combina o frutal da cereja com notas adocicadas. Sinta seu corpo com o novo Creme Nutritivo Desodorante Tododia Cereja e Avelã.",
+  "stock": 4,
+  "img": "./api/produtos/creme_tododia/creme_tododia_foto.png",
+  "assessments": [
+    {
+      "title": "Rogério",
+      "stars": 5,
+      "description": "Gostei muito do produto, atendeu todas as minhas necessidades."
+    },
+    {
+      "title": "Nathália",
+      "stars": 4,
+      "description": "Gostei, mas o preço poderia ser melhor."
+    }
+  ]
+}

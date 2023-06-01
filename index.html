@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./vue.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Celinha Cosmetics</title>
+</head>
+<body>
+  <div id="app">
+    <header class="header">
+      <img class="logo" src="./assets/celinha_logo5.png" alt="celinha-logo">
+      <a href="/"><h1 class="title">Loja da Celinha</h1></a>
+      <div class="carrinho_menu" @click="carrinhoAtivo = true">{{carrinhoTotal | numeroPreco}} | {{carrinho.length}}</div>
+    </header>
+
+  
+    <section class="products">
+      
+      <div v-for="item in products" @click="openModal(item.id)" :key="item.id" class="product">
+        <img :src="item.img" :alt="item.title" class="product_img" />
+        <div class="product_info">
+          <span class="product_price">{{item.price | numeroPreco}}</span>
+          <h2 class="product_title">{{item.title}}</h2>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="modal" v-if="product" @click="fecharModal">
+      <div class="modal_container">
+        <div class="modal_img">
+          <img :src="product.img" :alt="product.title"></img>
+        </div>
+        <div class="modal_dados">
+          <button @click="product = false" class="modal_close">X</button>
+          <span class="modal_price">{{product.price | numeroPreco}}</span>
+          <h2 class="modal_title">{{product.title}}</h2>
+          <p>{{product.description}}</p>
+          <button v-if="product.stock > 0" class="modal_btn" @click="adicionarItem">Adicionar Item</button>
+          <button v-else class="modal_btn esgotado" disabled>Produto Esgotado</button>
+        </div>
+        <div class="assessments">
+          <h2 class="assessments_subtitle">Avaliações</h2>
+          <ul>
+            <li v-for="avaliacao in product.assessments" class="avaliacao">
+              <p class="avaliacao_descricao">{{avaliacao.description}}</p>
+              <p class="avaliacao_usuario">{{avaliacao.title}} | {{avaliacao.stars}} stars</p>
+            </li>
+          <ul>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="car_modal" :class="{ativo: carrinhoAtivo}" @click="clickForaCarrinho">
+      <div class="car_container">
+        <button class="car_close" @click="carrinhoAtivo = false">X</button>
+        <h2 class="car_title">Carrinho</h2>
+        <div v-if="carrinho.length > 0">
+          <ul class="carrinho_lista">
+            <li v-for="(item, index) in carrinho" class="car_item">
+              <p>{{item.title}}</p>
+              <p class="car_price">{{item.price | numeroPreco}}</p>
+              <button class="car_remove" @click="removerItem(index)">X</button>
+            </li>
+          </ul>
+          <p class="car_total">{{carrinhoTotal | numeroPreco}}</p>
+          <button class="car_finalize">Finalizar Compra</button>
+        </div>
+        <p v-else>O carrinho está vazio.</p>
+      </div>
+    </section>
+
+
+
+    <div class="alert" :class="{ativo: alertaAtivo}">
+      <p class="alerta_mensagem">{{mensagemAlerta}}</p>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Celinha Cosmetics Todos © direitos reservados.</p>
+  </div>
+  
+
+  <script src="./app.js"></script>
+</body>
+</html>
